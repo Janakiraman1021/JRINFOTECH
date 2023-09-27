@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Course Store</title>
+</head>
+<body>
+    <header>
+        <h1>Course Store</h1>
+    </header>
+    <main>
+        <section class="course">
+            <img src="course1.jpg" alt="Python Basics">
+            <h2>Python Basics</h2>
+            <p>Learn the fundamentals of Python programming language.</p>
+            <p>Price: $100</p>
+            <button data-course="Python Basics" data-price="100">Add to Cart</button>
+        </section>
+        
+        <section class="course">
+            <img src="course2.jpg" alt="Python Data Structures and Algorithms">
+            <h2>Python Data Structures and Algorithms</h2>
+            <p>Master data structures and algorithms using Python.</p>
+            <p>Price: $150</p>
+            <button data-course="Python Data Structures" data-price="150">Add to Cart</button>
+        </section>
+
+        <section class="course">
+            <img src="course3.jpg" alt="Front Web Development">
+            <h2>Front Web Development</h2>
+            <p>Build modern web applications with HTML, CSS, and JavaScript.</p>
+            <p>Price: $120</p>
+            <button data-course="Front Web Development" data-price="120">Add to Cart</button>
+        </section>
+    </main>
+    <aside>
+        <h2>Shopping Cart</h2>
+        <ul id="cart">
+            <!-- Cart items will be added here dynamically using JavaScript -->
+        </ul>
+        <p>Total: <span id="total">0</span></p>
+        <button id="checkout">Checkout</button>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
