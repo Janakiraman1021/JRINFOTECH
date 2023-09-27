@@ -3,6 +3,11 @@ body {
     background: #e0e5ec;
     transition: background-color 0.3s ease;
 }
+/* Center-align the h1 text */
+.header.oval h1 {
+    text-align: center;
+}
+
 
 .container {
     display: flex;
