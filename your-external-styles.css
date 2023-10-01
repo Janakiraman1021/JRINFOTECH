@@ -3,11 +3,11 @@ body {
     background: #e0e5ec;
     transition: background-color 0.3s ease;
 }
+
 /* Center-align the h1 text */
-.header.oval h1 {
+.header h1 {
     text-align: center;
 }
-
 
 .container {
     display: flex;
@@ -94,6 +94,7 @@ body {
     color: #000;
     position: relative; /* Added position relative for pseudo-element */
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 @keyframes backgroundAnimation {
@@ -277,3 +278,16 @@ body {
 .course:hover .course-details {
     opacity: 1;
 }
+/* Add CSS styles here */
+.left-sidebar {
+    display: flex;
+    flex-direction: row; /* Display courses side by side */
+  }
+  .course {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Add some margin between courses */
+  }
+  .course img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+  }

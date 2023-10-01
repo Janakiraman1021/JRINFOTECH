@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Your Cart</h1>
+        </header>
+        <main class="main">
+            <section class="cart-items">
+                <h2>Your Selected Courses:</h2>
+                <ul id="cart-list">
+                    <!-- Cart items will be added here dynamically using JavaScript -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Retrieve selected courses from localStorage
+        const selectedCourses = JSON.parse(localStorage.getItem('selectedCourses'));
+
+        // Get the cart list element
+        const cartList = document.getElementById('cart-list');
+
+        // Check if there are selected courses
+        if (selectedCourses && selectedCourses.length > 0) {
+            // Display selected courses in the cart
+            selectedCourses.forEach(course => {
+                const listItem = document.createElement('li');
+                listItem.textContent = course;
+                cartList.appendChild(listItem);
+            });
+        } else {
+            // Display a message if the cart is empty
+            const emptyCartMessage = document.createElement('p');
+            emptyCartMessage.textContent = 'Your cart is empty.';
+            cartList.appendChild(emptyCartMessage);
+        }
+    </script>
+</body>
+</html>
