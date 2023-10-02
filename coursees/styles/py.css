@@ -1,0 +1,88 @@
+/* py.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Initial background color */
+    animation: backgroundChange 10s linear infinite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #b6cfeb; /* Header background color */
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-size: 24px;
+}
+
+.course-details {
+    text-align: left;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Course details background color with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for course details */
+}
+
+.course-title {
+    font-size: 28px;
+}
+
+.course-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.course-objectives {
+    font-size: 16px;
+}
+
+.course-objectives ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.add-to-cart {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Background color change animation */
+@keyframes backgroundChange {
+    0% {
+        background-color: #ffffff; /* Initial background color */
+    }
+    25% {
+        background-color: #ffea00; /* Yellow */
+    }
+    50% {
+        background-color: #007BFF; /* Blue */
+    }
+    75% {
+        background-color: #00ff00; /* Green */
+    }
+    100% {
+        background-color: #ffffff; /* Back to initial background color */
+    }
+}

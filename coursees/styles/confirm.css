@@ -1,0 +1,67 @@
+/* Add a smooth background color animation */
+body {
+    animation: colorChange 10s infinite alternate;
+    background-color: #3498db; /* Initial background color */
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #3498db;
+    }
+    100% {
+        background-color: #e74c3c; /* New background color */
+    }
+}
+
+/* Reset default margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center-align the content vertically and horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    size: 50px ;
+
+}
+
+/* Style the bank details section */
+.bank-details {
+    margin-bottom: 20px; /* Add some spacing below bank details */
+}
+
+/* Style the QR code and download button */
+#qr-code {
+    margin-bottom: 20px; /* Add some spacing below the QR code */
+}
+
+#download-button {
+    background-color: #007BFF; /* Set your desired button background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+#download-button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+
+.Pay{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    size: 50px ;
+
+}

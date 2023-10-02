@@ -12,10 +12,12 @@
         <header class="header">
             <h1 class="logo">JR InfoTech</h1>
         </header>
-        <main class="main">
+        <main class="main">     
             <section class="courses">
                 <div class="course">
-                    <img src="python.png" alt="Python Basics">
+                    <a href="./coursees/python_basics.html">
+                    <img src="python.png" alt="Python Basics" class="course">
+                    </a>    
                     <div class="course-details">
                         <h2>PYTHON BASICS</h2>
                         <p>Click the image to know about this course</p>
@@ -23,14 +25,18 @@
                     <button class="btn-12" onclick="addToCart('Python Basics')">Add to Cart</button>
                 </div>
                 <div class="course">
+                    <a href="./coursees/dsa.html">
                     <img src="DSA.png" alt="Data Structure and Algorithms in Python">
+                </a>
                     <div class="course-details">
                         <h2>Data Structure And Algorithms In Python</h2>
                     </div>
                     <button class="btn-12" onclick="addToCart('Data Structure And Algorithms In Python')">Add to Cart</button>
                 </div>
                 <div class="course">
+                    <a href="./coursees/fend.html">
                     <img src="frontend.jpg" alt="Front End Web Development">
+                </a>
                     <div class="course-details">
                         <h2>Front End Web Development</h2>
                     </div>
@@ -39,9 +45,8 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer-button btn-1">Course</div>
-            <a href="cart.html" target="_blank" class="footer-button btn-2">Cart</a>
-            <div class="footer-button btn-3">Payment</div>
+            <a href="#" target="_blank" class="footer-button btn-2">Cart</a>
+            <a href="./coursees/confirm.html " target="_blank" class="footer-button btn-3">Payment</a>
         </footer>
     </div>
 
@@ -49,31 +54,6 @@
         function addToCart(courseName) {
             alert(`Added "${courseName}" to the cart.`);
         }
-
-    // Set the date we're counting down to
-    const countDownDate = new Date("October 21, 2023 00:00:00").getTime();
-
-    // Update the countdown every 1 second
-    const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
-
-        // Calculate days, hours, minutes, and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the countdown
-        const countdownElement = document.getElementById("countdown");
-        countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-        // If the countdown is over, display a message
-        if (distance < 0) {
-            clearInterval(x);
-            countdownElement.innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>    
+    </script>
 </body>
 </html>
