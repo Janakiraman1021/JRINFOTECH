@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c);
+    background: linear-gradient(45deg, #3498db, #cc0ac6, #290de3 ,#0874cc , #350ae0 );
     background-size: 600% 100%;
     animation: gradientBG 15s ease infinite;
 }
@@ -16,11 +16,11 @@ body {
 }
 
 .header {
-    background: linear-gradient(45deg, #9100b6, #008cff);
+    background: linear-gradient(45deg, #1621b3, #008cff);
     border-radius: 80px;
     display: inline-block;
     padding: 4px 4px;
-    animation: borderAnimation 2s alternate infinite, colorChange 2s alternate infinite;
+    animation: borderAnimation 1ms alternate infinite, colorChange 2s alternate infinite;
     color: #000;
     position: relative; /* Added position relative for pseudo-element */
     transition: all 0.3s ease;
@@ -117,9 +117,7 @@ body {
         inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
 
-/* ... (Rest of the CSS remains unchanged) ... */
 
-/* ... (Rest of the CSS remains unchanged) ... */
 .btn-12 {
     position: relative;
     right: 20px;
@@ -252,7 +250,7 @@ body {
     }
 }
 
-/* Add to Cart Button Styles */
+
 .btn-12 {
     position: relative;
     right: 20px;
